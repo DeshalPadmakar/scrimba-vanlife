@@ -89,10 +89,10 @@ export default function Footer() {
             <section role="developer info" className="flex flex-col gap-2 py-8 mt-8 text-center bg-gray-800 text-sm text-gray-100">
                 <p>Website developed by <span className="font-bold">Deshal Padmakar</span></p>
                 <div className="flex gap-3 text-xl justify-center items-center">
-                    <IoMdMail className="hover:text-blue-200"/>
-                    <FaLinkedin className="hover:text-blue-200" href=""/>
-                    <FaGithub className="hover:text-blue-200" />
-                    <FaTwitter className="hover:text-blue-200" />
+                    <a href="mailto:cdeshalpadmakar@gmail.com"><IoMdMail className="hover:text-blue-200"/></a>
+                    <a href="https://www.linkedin.com/in/deshalpadmakar/" target="_blank"><FaLinkedin className="hover:text-blue-200" /></a>
+                    <a href="https://github.com/deshalpadmakar" target="_blank"><FaGithub className="hover:text-blue-200" /></a>
+                    <a href="https://twitter.com/deshalpadmakar" target="_blank"><FaTwitter className="hover:text-blue-200" /></a>
                 </div>
             </section>
         </footer>
