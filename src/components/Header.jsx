@@ -39,7 +39,7 @@ export default function Header() {
     }
 
     return (
-        <header className="w-full h-16 p-4 bg-white flex items-center fixed shadow-md max-w-[500px]">
+        <header className="w-full h-16 p-4 bg-white flex items-center fixed shadow-md">
             <nav className="w-full flex justify-between items-center gap-4">
                 
                 {/* logo */}
