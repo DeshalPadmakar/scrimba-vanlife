@@ -13,9 +13,9 @@ import { IoMdMail } from "react-icons/io"
 export default function Footer() {
     return (
         <footer className="bg-gray-100">
-            <div className="px-4 pt-16 flex flex-col gap-11"> 
+            <div className="px-4 pt-16 grid gap-11 md:px-8 md:grid-cols-2 md:pb-6"> 
                 <section>
-                    <h1 className="text-xl font-bold mb-2 leading-none">#VANLIFE</h1>
+                    <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">#VANLIFE</h1>
                     <ul className="flex flex-col gap-1">
                         <li>
                             <Link to="about" className="hover:text-blue-600 text-sm">About us</Link>
@@ -32,8 +32,8 @@ export default function Footer() {
                     </ul>
                 </section>
 
-                <section role="FAQs" className="">
-                    <h1 className="text-xl font-bold mb-2 leading-none">FAQs</h1>
+                <section role="FAQs" className="md:order-2">
+                    <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">FAQs</h1>
                     <div className="">
                         <Accordion>
                             <Accordion.Title className="w-full">
@@ -64,13 +64,13 @@ export default function Footer() {
                     </div>
                 </section>
 
-                <section role="short summary about us">
-                    <h1 className="text-xl font-bold mb-2 leading-none">Vanlife</h1>
-                    <p className="text-sm text-gray-700">We offer high-quality campervans for rental or purchase in various destinations throughout India, delivered through a user-friendly and tailor-made online platform.</p>
+                <section role="short summary about us" className="md:order-1">
+                    <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">Vanlife</h1>
+                    <p className="text-sm text-gray-700">Explore India's beauty at your own pace with our high-quality campervans. Whether renting or buying, our user-friendly platform ensures a seamless journey. Begin your unforgettable adventure today!</p>
                 </section>
 
-                <section role="newsletter section">
-                    <h1 className="text-xl font-bold mb-2 leading-none">Subscribe to our newsletter</h1>
+                <section role="newsletter section" className="md:order-3">
+                    <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">Subscribe to our newsletter</h1>
                     <p className="text-sm text-gray-700" >Stay informed by subscribing to receive periodic notifications about the latest campervan rental promotions, exclusive deals, and informative news!</p>
                     <form className="flex flex-col gap-4 mt-4">
                         <label htmlFor="email" className="sr-only">Email</label>
