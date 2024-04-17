@@ -15,6 +15,9 @@ export default {
       backgroundImage: {
         'homePage': 'linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url("./assets/images/homePage.jpeg")',
         'aboutPage': 'linear-gradient(rgba(29, 78, 216, 0.25),rgba(29, 78, 216, 0.25)), url("./assets/images/about.jpg")'
+      },
+      gridTemplateColumns: {
+        'custom': 'repeat(auto-fill, minmax(200px, 1fr))'
       }
     },
   },

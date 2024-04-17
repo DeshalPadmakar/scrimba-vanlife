@@ -40,9 +40,9 @@ export default function Vans() {
                 }}
             >
                 <img src={van.imageUrl} className="rounded-md"/>
-                <div>
+                <div className="md:mt-1">
                     <h3 className="font-semibold leading-tight mt-1.5">{van.name}</h3>
-                    <p className="text-sm">${van.price}<span>/day</span></p>
+                    <p className="text-sm mt-0.5"><span className="font-semibold text-base">${van.price}</span>/day</p>
                 </div>
             </Link>
         </div>
@@ -76,8 +76,8 @@ export default function Vans() {
     }
 
     return (
-        <div className="mt-24 mb-16 mx-4 text-gray-900">
-            <h1 className="text-3xl font-bold mb-4">Explore our van options</h1>
+        <div className="mt-24 mb-16 mx-4 md:mx-8 text-gray-900">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">Explore our van options</h1>
             <div role="filter list" className="flex flex-wrap items-center gap-2">
                 <button
                     onClick={() => handleFilterChange("type", "simple")}
@@ -106,7 +106,7 @@ export default function Vans() {
                 ) : null}
 
             </div>
-            <div className="grid grid-cols-2 justify-center gap-6 mt-10">
+            <div className="grid grid-cols-2 md:grid-cols-custom gap-6 mt-10">
                 {vanElements}
             </div>
         </div>
