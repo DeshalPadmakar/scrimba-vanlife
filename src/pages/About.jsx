@@ -16,27 +16,27 @@ export default function About() {
 
                     <div className="grid gap-8 md:gap-x-10 mt-8 md:grid-cols-2">
                         <div>
-                            <h3 className=" md:text-lg text-slate-900 font-bold">Rent a Campervan</h3>
+                            <h3 className=" md:text-[1.1rem] text-slate-900 font-bold">Rent a Campervan</h3>
                             <p className="">Our comprehensive fleet of campervans caters to every need and budget. From compact pop-top vans to spacious motorhomes, we have the perfect vehicle to suit your adventure plans. Each campervan is meticulously maintained and equipped with all the essentials for a comfortable and enjoyable journey.</p>
                         </div>
 
                         <div>
-                            <h3 className=" md:text-lg text-slate-900 font-bold">Host Your Campervan</h3>
+                            <h3 className=" md:text-[1.1rem] text-slate-900 font-bold">Host Your Campervan</h3>
                             <p className="">If you own a campervan that's not in constant use, why not share it with others and earn some extra income? With #VANLIFE, you can list your campervan for rent and reach a wide network of potential renters. We handle the booking process, payments, and insurance, so you can sit back and relax while earning passive income.</p>
                         </div>
 
                         <div>
-                            <h3 className=" md:text-lg text-slate-900 font-bold">Our Community</h3>
+                            <h3 className=" md:text-[1.1rem] text-slate-900 font-bold">Our Community</h3>
                             <p className="">Join our vibrant community of campervan enthusiasts and connect with fellow adventurers. Share your experiences, exchange tips, and discover new destinations along the way. We're here to support you every step of your van life journey.</p>
                         </div>
 
                         <div>
-                            <h3 className="md:text-lg text-slate-900 font-bold">Embrace the #VANLIFE Experience</h3>
+                            <h3 className="md:text-[1.1rem] text-slate-900 font-bold">Embrace the #VANLIFE Experience</h3>
                             <p className="">#VANLIFE is more than just renting a campervan; it's a lifestyle. It's about embracing the freedom of the open road, exploring new horizons, and living life on your own terms. Let us be your guide as you embark on your unforgettable #VANLIFE adventure.</p>
                         </div>
                     </div>
                 </div>
-                <div className="font-bold bg-blue-100 p-8 md:p-12 mt-12 md:mt-20 md:mb-10 rounded md:rounded-md md:w-3/4 md:mx-auto">
+                <div className="font-bold bg-blue-100 p-8 md:p-12 mt-12 md:mt-20 md:mb-10 rounded md:rounded-md md:w-[530px] md:mx-auto">
                     <h3 className="text-2xl md:text-3xl">Your destination is waiting.<br />Your van is ready.</h3>
                     <Link className="mt-4 md:mt-8 font-semibold text-lg bg-blue-600 text-white px-4 py-2 rounded-md inline-block" to="/vans">Explore our vans</Link>
                 </div>

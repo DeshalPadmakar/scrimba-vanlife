@@ -39,7 +39,7 @@ export default function Header() {
     }
 
     return (
-        <header className="w-full h-16 p-4 bg-white flex items-center fixed shadow-md">
+        <header className="w-full h-16 p-4 bg-white flex items-center fixed shadow-md z-10">
             <nav className="w-full flex justify-between items-center gap-4">
                 
                 {/* logo */}
@@ -51,7 +51,7 @@ export default function Header() {
 
                 {/* hamburger */}
                 <button 
-                    className={`z-10 order-1 outline-0`}
+                    className={`z-20 order-1 outline-0`}
                     onClick={toggleNav}
                     >
                     <div 
