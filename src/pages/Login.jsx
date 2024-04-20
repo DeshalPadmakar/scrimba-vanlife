@@ -97,12 +97,12 @@ export default function Login() {
     }
 
     return (
-        <div className="h-screen px-4 pt-24 flex flex-col text-gray-950 ">
+        <div className="h-screen px-4 pt-24 flex flex-col text-gray-950 md:max-w-[400px] md:mx-auto md:justify-center md:p-0">
             {
                 location.state?.message &&
                     <h3 className="text-center mb-2 text-red-500">{location.state.message}</h3>
             }
-            <h1 className="text-center text-2xl font-bold tracking-wide ">{isNewUser ? "Sign Up" : "Sign In"}</h1>
+            <h1 className="text-center text-2xl md:text-3xl font-bold tracking-wide ">{isNewUser ? "Sign Up" : "Sign In"}</h1>
             {
                 error?.message &&
                     <h3 className="text-center my-2 text-red-500">{error.message}</h3>

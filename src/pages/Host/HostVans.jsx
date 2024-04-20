@@ -24,14 +24,14 @@ export default function HostVans() {
 
     const hostVansEls = vans.map(van => (
         <Link to={`${van.id}`} key={van.id}>
-            <div className="flex items-center gap-5 mt-6 bg-blue-50 p-4 rounded-md" >
-                <img src={van.imageUrl} alt={`Photo of ${van.name}`} className="h-[90px] w-[90px] rounded-md"/>
+            <div className="flex md:flex-col md:items-start items-center gap-5 md:gap-2 mt-6 bg-blue-50 md:bg-white p-4 md:p-0 rounded-md " >
+                <img src={van.imageUrl} alt={`Photo of ${van.name}`} className="h-[90px] w-[90px] rounded-md md:w-full md:h-full"/>
                 <div>
-                    <h3 className="font-bold">{van.name}</h3>
-                    <p>${van.price}/day</p>
+                    <h3 className="font-bold text-lg">{van.name}</h3>
+                    <p className="text-sm"><span className="font-bold text-lg">${van.price}</span>/day</p>
                 </div>
             </div>
-            </Link>
+        </Link>
     ))
 
     // if (loading) {
@@ -48,7 +48,7 @@ export default function HostVans() {
             <div className="mb-16">
                 {
                     vans.length > 0 ? (
-                        <section>
+                        <section className="md:grid md:grid-cols-custom md:gap-6">
                             {hostVansEls}
                         </section>
 

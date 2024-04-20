@@ -52,14 +52,18 @@ export default function HostVanDetail() {
             </Link>
             {currentVan &&
                 <section className="text-gray-950 mt-8 mb-16">
-                    <img src={currentVan.imageUrl} className="rounded-lg" />
-                    <div className="flex items-center justify-between mt-4">
-                        <h3 className="text-[2rem] font-bold">{currentVan.name}</h3>
-                        <p className="text-sm px-2 py-0.5 border-2 rounded-full inline-block">
-                            {currentVan.type}
-                        </p>
+                    <div className=" md:grid md:grid-cols-2 md:gap-8 md:bg-blue-100 md:-mx-8 md:p-8">
+                        <img src={currentVan.imageUrl} className="rounded-lg" />
+                        <div className="">
+                            <div className="flex items-center justify-between mt-4">
+                                <h3 className="text-[2rem] font-bold">{currentVan.name}</h3>
+                                <p className="text-sm px-2 py-0.5 border-2 rounded-full inline-block md:hidden">
+                                    {currentVan.type}
+                                </p>
+                            </div>
+                            <h4 className="mt-2"><span className="font-bold text-2xl tracking-wide">${currentVan.price}</span>/day</h4>
+                        </div>
                     </div>
-                    <h4 className="mt-2"><span className="font-bold text-2xl tracking-wide">${currentVan.price}</span>/day</h4>
                     <nav className="flex gap-4 mt-8 mb-6">
                         <NavLink
                             to="."
