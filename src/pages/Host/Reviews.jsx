@@ -25,20 +25,22 @@ export default function Reviews() {
                 <h2 className="text-3xl font-bold">Your reviews</h2>
                 <p className="text-sm text-gray-700">Last 30 days</p>
             </div>
-            {reviewsData.map((review) => (
-                <div key={review.id} className="border-b pb-4 mb-6">
-                    <div className="flex gap-0.5">
-                        {[...Array(review.rating)].map((_, i) => (
-                            <BsStarFill className="text-blue-500" key={i} />
-                        ))}
+            <div className="sm:grid sm:grid-cols-2 sm:gap-6 lg:gap-8">
+                {reviewsData.map((review) => (
+                    <div key={review.id} className="border-b pb-4 mb-6 sm:border-none sm:bg-blue-50 sm:p-6">
+                        <div className="flex gap-0.5">
+                            {[...Array(review.rating)].map((_, i) => (
+                                <BsStarFill className="text-blue-500" key={i} />
+                            ))}
+                        </div>
+                        <div className="flex justify-between mt-3 mb-1 sm:flex-col sm:mt-4 sm:mb-4 sm:gap-0.5">
+                            <p className="font-bold text-lg">{review.name}</p>
+                            <p className="text-sm text-gray-700">{review.date}</p>
+                        </div>
+                        <p className="text-gray-900">{review.text}</p>
                     </div>
-                    <div className="flex justify-between mt-3 mb-1">
-                        <p className="font-bold text-lg">{review.name}</p>
-                        <p className="text-sm text-gray-700">{review.date}</p>
-                    </div>
-                    <p className="text-gray-900">{review.text}</p>
-                </div>
-            ))}
+                ))}
+            </div>
         </section>
     )
 }

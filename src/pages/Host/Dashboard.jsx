@@ -45,27 +45,31 @@ export default function Dashboard() {
 
     return (
         <>
-            <section className="bg-blue-100 text-gray-950 mt-12 p-5 md:-mx-8 md:p-8 rounded-t-md md:rounded-none">
-                <div className="info">
-                    <h1 className="text-2xl md:text-3xl font-bold tracking-wide md:tracking-normal">Welcome!</h1>
-                    <div className="flex justify-between items-center my-4">
-                        <p>Income last <span>30 days</span></p>
-                        <Link to="income" className="text-sm text-gray-700 hover:underline">Details</Link>
+            <section className="text-gray-950 mt-12 lg:grid lg:grid-cols-2 lg:gap-6">
+                <Link 
+                    to="income" 
+                    className="block bg-blue-100 lg:bg-blue-200 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-t-md md:rounded-none hover:bg-blue-500 hover:text-white transition duration-200"
+                    >
+                    <div>
+                        <h1 className="text-2xl md:text-3xl lg:text-[1.8rem] font-bold tracking-wide md:tracking-normal">Welcome!</h1>
+                        <p className="mt-4 mb-2">Income (last 30 days)</p>
+                        <h2 className="text-3xl md:text-[2.75rem] md:mt-6 font-bold">$2,260</h2>
                     </div>
-                    <h2 className="text-3xl md:text-[2.75rem] md:mt-6 font-bold">$2,260</h2>
-                </div>
-            </section>
-            <section className="bg-blue-200 p-5 md:p-8 rounded-b-md flex items-center justify-between text-gray-950 md:-mx-8 md:rounded-none">
-                <div className="flex items-center gap-6">
-                    <h2 className="text-xl md:text-[1.4rem] font-semibold">Review score</h2>
-                    <div className="flex items-center gap-1 md:text-lg">
-                        <BsStarFill className="text-blue-500 md:text-2xl" />
-                        <p className="md:mt-1">
-                            <span className="font-bold">5.0</span>/5
-                        </p>
+                </Link>
+                <Link 
+                    to="reviews" 
+                    className="block bg-blue-200 lg:bg-blue-100 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-b-md md:rounded-none group hover:bg-blue-500 hover:text-white transition duration-200"
+                    >
+                    <div className="flex lg:flex-col items-center lg:items-start gap-6">
+                        <h2 className="text-xl md:text-[1.4rem] lg:text-[1.8rem] font-semibold lg:font-bold lg:tracking-wide">Review score</h2>
+                        <div className="flex items-center gap-1 lg:gap-2 md:text-lg lg:text-3xl lg:mt-auto">
+                            <BsStarFill className="text-blue-500 md:text-2xl group-hover:text-white" />
+                            <p className="md:mt-1">
+                                <span className="font-bold">5.0</span>/5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <Link to="reviews" className="text-sm hover:underline text-gray-700">Details</Link>
+                </Link>
             </section>
             <section className="mt-12 mb-20 text-gray-950">
                 <h2 className="text-[1.4rem] font-bold md:text-2xl">Your listed vans</h2>

@@ -97,7 +97,7 @@ export default function Login() {
     }
 
     return (
-        <div className="h-screen px-4 pt-24 flex flex-col text-gray-950 md:max-w-[400px] md:mx-auto md:justify-center md:p-0">
+        <div className="h-screen px-4 pt-24 md:p-0 flex flex-col text-gray-950 md:justify-center md:items-center">
             {
                 location.state?.message &&
                     <h3 className="text-center mb-2 text-red-500">{location.state.message}</h3>
@@ -108,7 +108,7 @@ export default function Login() {
                     <h3 className="text-center my-2 text-red-500">{error.message}</h3>
             }
 
-            <form onSubmit={handleSubmit} className="flex flex-col mt-6 gap-3">
+            <form onSubmit={handleSubmit} className="flex flex-col mt-6 gap-3 md:w-[400px]">
                 {isNewUser && 
                     <input
                         name="userName"

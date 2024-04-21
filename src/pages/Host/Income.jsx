@@ -8,7 +8,7 @@ export default function Income() {
     ]
     return (
         <section className="mt-12 mb-20 text-gray-950">
-            <div className="bg-blue-100 rounded-md md:rounded-none p-5 md:-mx-8 md:px-8 md:py-12">
+            <div className="bg-blue-100 rounded-md md:rounded-none p-5 md:-mx-8 lg:-mx-0 md:px-8 lg:px-10 md:py-12">
                 <h1 className="text-2xl md:text-3xl font-bold mb-4">Income</h1>
                 <div className="flex items-center justify-between">
                     <h2 className="text-3xl md:text-4xl font-bold">$2,260</h2>

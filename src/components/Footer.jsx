@@ -13,7 +13,7 @@ import { IoMdMail } from "react-icons/io"
 export default function Footer() {
     return (
         <footer className="bg-gray-100">
-            <div className="px-4 pt-16 grid gap-11 md:px-8 md:grid-cols-2 md:pb-6"> 
+            <div className="px-4 pt-16 grid gap-11 md:px-8 md:grid-cols-2 md:pb-6 lg:px-10"> 
                 <section>
                     <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">#VANLIFE</h1>
                     <ul className="flex flex-col gap-1">

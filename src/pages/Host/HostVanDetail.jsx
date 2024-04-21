@@ -52,9 +52,9 @@ export default function HostVanDetail() {
             </Link>
             {currentVan &&
                 <section className="text-gray-950 mt-8 mb-16">
-                    <div className=" md:grid md:grid-cols-2 md:gap-8 md:bg-blue-100 md:-mx-8 md:p-8">
+                    <div className=" md:grid md:grid-cols-2 md:gap-8 md:bg-blue-100 lg:bg-white md:-mx-8 md:p-8 ">
                         <img src={currentVan.imageUrl} className="rounded-lg" />
-                        <div className="">
+                        <div>
                             <div className="flex items-center justify-between mt-4">
                                 <h3 className="text-[2rem] font-bold">{currentVan.name}</h3>
                                 <p className="text-sm px-2 py-0.5 border-2 rounded-full inline-block md:hidden">

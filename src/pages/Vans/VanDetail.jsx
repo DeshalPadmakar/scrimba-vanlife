@@ -51,9 +51,9 @@ export default function VanDetail() {
             </Link>
             
             {van && (
-                <div className="md:grid md:grid-cols-5 md:gap-10 md:relative ">
-                    <img src={van.imageUrl} className="mt-6 rounded-lg md:col-span-3 md:sticky md:top-24"/>
-                    <div className="md:col-span-2">
+                <div className="md:grid md:grid-cols-5 lg:grid-cols-2 md:gap-10 md:relative ">
+                    <img src={van.imageUrl} className="mt-6 rounded-lg md:col-span-3 lg:col-span-1 md:sticky md:top-24"/>
+                    <div className="md:col-span-2 lg:col-span-1">
                         <div className="flex items-center justify-between mt-4">
                             <h2 className="text-[2rem] font-bold">{van.name}</h2>
                             <p className="text-sm px-2 py-0.5 border-2 rounded-full inline-block md:hidden">
