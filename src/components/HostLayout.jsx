@@ -11,7 +11,7 @@ export default function HostLayout() {
     }
 
     return (
-        <div className="mt-24 mx-4 min-h-[calc(100vh-96px)] md:mx-8 lg:mx-10">
+        <div className="mt-24 mx-4 min-h-[calc(100vh-96px)] md:mx-8 lg:mx-10 xl:mx-auto xl:w-11/12 xl:max-w-[1300px] ">
             <nav className="flex gap-4 lg:gap-6 text-gray-950">
                 <NavLink
                     to="."

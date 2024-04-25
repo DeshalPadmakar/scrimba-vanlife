@@ -40,7 +40,7 @@ export default function VanDetail() {
     const type = location.state?.type || "all";
     
     return (
-        <section className="mx-4 md:mx-8 mt-24 mb-16 text-gray-950">
+        <section className="mx-4 md:mx-8 mt-24 mb-16 text-gray-950 xl:w-11/12 xl:max-w-[1300px] xl:mx-auto">
             <Link
                 to={`..${search}`}
                 relative="path"

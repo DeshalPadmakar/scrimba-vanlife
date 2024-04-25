@@ -5,13 +5,16 @@ export default function Income() {
         { amount: 720, date: "Jan 3, '23", id: "1" },
         { amount: 560, date: "Dec 12, '22", id: "2" },
         { amount: 980, date: "Dec 3, '22", id: "3" },
+        { amount: 230, date: "Dec 3, '22", id: "3" },
+        { amount: 410, date: "Dec 3, '22", id: "3" },
+        { amount: 450, date: "Dec 3, '22", id: "3" },
     ]
     return (
-        <section className="mt-12 mb-20 text-gray-950">
-            <div className="bg-blue-100 rounded-md md:rounded-none p-5 md:-mx-8 lg:-mx-0 md:px-8 lg:px-10 md:py-12">
+        <section className="mt-12 lg:mt-10 mb-20 text-gray-950">
+            <div className="bg-blue-100 rounded-md md:rounded-none lg:rounded-md p-5 md:-mx-8 lg:-mx-0 md:px-8 lg:px-10 md:py-12">
                 <h1 className="text-2xl md:text-3xl font-bold mb-4">Income</h1>
                 <div className="flex items-center justify-between">
-                    <h2 className="text-3xl md:text-4xl font-bold">$2,260</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">$3,350</h2>
                     <p className="text-sm text-gray-700">Last 30 days</p>
                 </div>
             </div>

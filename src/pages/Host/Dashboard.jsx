@@ -45,20 +45,20 @@ export default function Dashboard() {
 
     return (
         <>
-            <section className="text-gray-950 mt-12 lg:grid lg:grid-cols-2 lg:gap-6">
+            <section className="text-gray-950 mt-12 lg:mt-10 lg:grid lg:grid-cols-2 lg:gap-6">
                 <Link 
                     to="income" 
-                    className="block bg-blue-100 lg:bg-blue-200 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-t-md md:rounded-none hover:bg-blue-500 hover:text-white transition duration-200"
+                    className="block bg-blue-100 lg:bg-blue-200 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-t-md md:rounded-none lg:rounded-lg hover:bg-blue-500 hover:text-white transition duration-200"
                     >
                     <div>
                         <h1 className="text-2xl md:text-3xl lg:text-[1.8rem] font-bold tracking-wide md:tracking-normal">Welcome!</h1>
                         <p className="mt-4 mb-2">Income (last 30 days)</p>
-                        <h2 className="text-3xl md:text-[2.75rem] md:mt-6 font-bold">$2,260</h2>
+                        <h2 className="text-3xl md:text-[2.75rem] md:mt-6 font-bold">$3,350</h2>
                     </div>
                 </Link>
                 <Link 
                     to="reviews" 
-                    className="block bg-blue-200 lg:bg-blue-100 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-b-md md:rounded-none group hover:bg-blue-500 hover:text-white transition duration-200"
+                    className="block bg-blue-200 lg:bg-blue-100 md:-mx-8 lg:mx-0 p-5 md:p-8 lg:p-10 rounded-b-md md:rounded-none lg:rounded-lg group hover:bg-blue-500 hover:text-white transition duration-200"
                     >
                     <div className="flex lg:flex-col items-center lg:items-start gap-6">
                         <h2 className="text-xl md:text-[1.4rem] lg:text-[1.8rem] font-semibold lg:font-bold lg:tracking-wide">Review score</h2>

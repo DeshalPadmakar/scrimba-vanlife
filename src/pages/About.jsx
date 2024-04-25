@@ -5,10 +5,10 @@ import { Link } from "react-router-dom"
 export default function About() {
     return (
         <div className="mt-16">
-            <div className="h-[250px] md:h-[400px] bg-aboutPage bg-cover flex lg:bg-left-bottom">
+            <div className="h-[250px] md:h-[400px] xl:h-[500px] bg-aboutPage bg-cover flex lg:bg-left-bottom">
                 <h1 className="m-auto text-slate-50 text-4xl font-bold tracking-wide">About us</h1>
             </div>
-            <div className="px-4 md:px-8 pt-8 pb-12 lg:max-w-[900px] lg:mx-auto lg:px-0 lg:pt-16">
+            <div className="px-4 md:px-8 lg:px-10 pt-8 pb-12 lg:max-w-[900px] lg:mx-auto xl:px-0 lg:pt-16">
                 <div className="text-slate-700">
                     <h2 className="text-2xl md:text-3xl font-bold leading-normal text-slate-950 bg-blue border-b border-slate-200 pb-8 md:w-3/4 md:mx-auto md:text-center lg:pb-10">Don't squeeze in a sedan when you could relax in a van.</h2>
                     <p className="mt-8 lg:mt-10">Welcome to <span className="font-bold">#VANLIFE</span>, your one-stop destination for campervan adventures. Whether you're a seasoned campervan enthusiast or a curious newcomer, we're here to make your road trip dreams a reality.</p>

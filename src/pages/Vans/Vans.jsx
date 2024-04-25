@@ -76,7 +76,7 @@ export default function Vans() {
     }
 
     return (
-        <div className="mt-24 mb-16 mx-4 md:mx-8 text-gray-900 lg:mx-10">
+        <div className="mt-24 mb-16 mx-4 md:mx-8 text-gray-900 lg:mx-10 xl:w-11/12 xl:max-w-[1300px] xl:mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Explore our van options</h1>
             <div role="filter list" className="flex flex-wrap items-center gap-2">
                 <button

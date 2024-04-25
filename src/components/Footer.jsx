@@ -13,7 +13,7 @@ import { IoMdMail } from "react-icons/io"
 export default function Footer() {
     return (
         <footer className="bg-gray-100">
-            <div className="px-4 pt-16 grid gap-11 md:px-8 md:grid-cols-2 md:pb-6 lg:px-10"> 
+            <div className="px-4 pt-16 grid gap-11 md:px-8 md:grid-cols-2 xl:grid-cols-[150px_1fr_1fr_1fr] md:pb-6 lg:px-10 xl:px-0 xl:w-11/12 xl:max-w-[1300px] xl:mx-auto"> 
                 <section>
                     <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">#VANLIFE</h1>
                     <ul className="flex flex-col gap-1">
@@ -32,7 +32,7 @@ export default function Footer() {
                     </ul>
                 </section>
 
-                <section role="FAQs" className="md:order-2">
+                <section role="FAQs" className="md:order-2 xl:order-1">
                     <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">FAQs</h1>
                     <div className="">
                         <Accordion>
@@ -64,7 +64,7 @@ export default function Footer() {
                     </div>
                 </section>
 
-                <section role="short summary about us" className="md:order-1">
+                <section role="short summary about us" className="md:order-1 xl:order-3">
                     <h1 className="text-xl md:text-lg font-bold mb-2 md:mb-1 leading-none">Vanlife</h1>
                     <p className="text-sm text-gray-700">Explore India's beauty at your own pace with our high-quality campervans. Whether renting or buying, our user-friendly platform ensures a seamless journey. Begin your unforgettable adventure today!</p>
                 </section>
