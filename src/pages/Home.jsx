@@ -67,7 +67,7 @@ export default function Home() {
                 </ul>
             </section>
 
-            <section className="px-4 md:px-8 pb-20 text-gray-950 lg:px-0  ">
+            <section className="px-4 md:px-8 pb-20 text-gray-950 lg:px-0">
                 <div className="rounded-md overflow-hidden shadow-md bg-blue-100 grid md:grid-cols-2 lg:rounded-none">
                     <div className="h-[250px] md:h-[auto]">
                         <img src={exploreVan} alt="photo of a yellow van parked in parking lot, sea on background" className="w-full h-full object-cover"/>

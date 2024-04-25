@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 export default function About() {
     return (
-        <div className="mt-16">
+        <div className="mt-16 md:mt-14 lg:mt-12">
             <div className="h-[250px] md:h-[400px] xl:h-[500px] bg-aboutPage bg-cover flex lg:bg-left-bottom">
                 <h1 className="m-auto text-slate-50 text-4xl font-bold tracking-wide">About us</h1>
             </div>
