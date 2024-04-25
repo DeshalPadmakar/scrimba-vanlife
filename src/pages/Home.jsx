@@ -18,7 +18,7 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center gap-5 m-auto lg:w-[750px]">
                     <h1 className=" text-4xl md:text-[2.7rem] xl:text-[3.35rem] font-extrabold leading-tight tracking-wide xl:tracking-wider">You got the travel plans, we got the travel vans.</h1>
                     <p className="text-slate-50 md:text-lg xl:text-xl xl:mt-2 xl:leading-relaxed">Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
-                    <Link to="vans" className="bg-blue-600 hover:bg-blue-700 active:bg-blue-600 transition w-full px-28 py-3 font-bold text-lg md:text-xl xl:text-2xl tracking-wide rounded-md md:w-auto  md:tracking-wider">Find your van</Link>
+                    <Link to="vans" className="bg-blue-600 hover:bg-blue-700 active:bg-blue-600 transition w-full sm:w-[300px] py-3 font-bold text-lg md:text-xl xl:text-2xl tracking-wide rounded-md md:tracking-wider">Find your van</Link>
                 </div>
             </section>
 
