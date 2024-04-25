@@ -12,12 +12,12 @@ export default function HostLayout() {
 
     return (
         <div className="mt-24 lg:mt-20 mx-4 min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-84px)] md:mx-8 lg:mx-10 xl:mx-auto xl:w-11/12 xl:max-w-[1300px] ">
-            <nav className="flex gap-4 lg:gap-6 text-gray-950">
+            <nav className="flex gap-4 text-gray-950">
                 <NavLink
                     to="."
                     end
                     style={({ isActive }) => isActive ? activeStyles : null}
-                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.1rem]"
+                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.05rem]"
                 >
                     Dashboard
                 </NavLink>
@@ -25,7 +25,7 @@ export default function HostLayout() {
                 <NavLink
                     to="income"
                     style={({ isActive }) => isActive ? activeStyles : null}
-                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.1rem]"
+                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.05rem]"
                 >
                     Income
                 </NavLink>
@@ -33,7 +33,7 @@ export default function HostLayout() {
                 <NavLink
                     to="vans"
                     style={({ isActive }) => isActive ? activeStyles : null}
-                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.1rem]"
+                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.05rem]"
                 >
                     Vans
                 </NavLink>
@@ -41,7 +41,7 @@ export default function HostLayout() {
                 <NavLink
                     to="reviews"
                     style={({ isActive }) => isActive ? activeStyles : null}
-                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.1rem]"
+                    className="hover:text-blue-600 hover:underline hover:decoration-blue-600 hover:underline-offset-[12px] hover:decoration-2 md:text-[1.05rem]"
                 >
                     Reviews
                 </NavLink>

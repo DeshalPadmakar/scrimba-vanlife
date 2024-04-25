@@ -5,7 +5,7 @@ export default function HostVanInfo() {
     const { currentVan } = useOutletContext()
     
     return (
-        <section className="host-van-detail-info">
+        <section className="host-van-detail-info text-gray-950">
             <h4 className="font-semibold mt-4">Name</h4>
             <p>{currentVan.name}</p>
             <h4 className="font-semibold mt-4">Category</h4>
